@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+
+<title>Untitled Document</title>
+
+</head>
+
+<style type="text/css">
+
+<!--
+
+body {
+
+	background-color: #AAB1B0;
+
+	background-image: url(images/clentsbg.jpg);
+
+	background-repeat: no-repeat;
+
+	margin-left: 0px;
+
+	margin-top: 0px;
+
+}
+
+.style1 {color: #FFFFFF}
+
+.list {
+
+	font-family: Georgia, "Times New Roman", Times, serif;
+
+	font-size: small;
+
+	color: #B8F4F4;
+
+	line-height: 120%;
+
+	width: 185px;
+
+	font-weight: normal;
+
+	padding: 10px;
+
+	margin: 0px;
+
+}
+
+-->
+
+</style>
+
+</head>
+
+<body style="background-image: url('http://beaguest.net/images/clentsbg.jpg')">
+
+<script type="text/javascript">
+
+var scrollspeed=cache=1
+
+//Specify intial delay before scroller starts scrolling (in miliseconds):
+
+var initialdelay=1500
+
+function initializeScroller(){
+
+dataobj=document.all? document.all.datacontainer : document.getElementById("datacontainer")
+
+dataobj.style.top="9px"
+
+setTimeout("getdataheight()", initialdelay)
+
+}
+
+function getdataheight(){
+
+thelength=dataobj.offsetHeight
+
+if (thelength==0)
+
+setTimeout("getdataheight()",800)
+
+else
+
+scrollDiv()
+
+}
+
+function scrollDiv(){
+
+dataobj.style.top=parseInt(dataobj.style.top)-scrollspeed+"px"
+
+if (parseInt(dataobj.style.top)<thelength*(-1))
+
+dataobj.style.top="5px"
+
+setTimeout("scrollDiv()",40)
+
+}
+
+if (window.addEventListener)
+
+window.addEventListener("load", initializeScroller, false)
+
+else if (window.attachEvent)
+
+window.attachEvent("onload", initializeScroller)
+
+else
+
+window.onload=initializeScroller
+
+</script>
+
+<div id="datacontainer" style="position:absolute;left:10;top:0;width:991" onMouseOver="scrollspeed=0" onMouseOut="scrollspeed=cache">
+
+  <div class="list">
+
+    <p> Armadillo Homes<br>
+
+      *<br>
+
+      Attorney General of Texas, Greg Abbott<br>
+
+      *<br>
+
+      Austin Board of Realtors<br>
+
+      *<br>
+
+      Austin Gay and Lesbian International Film Festival<br>
+
+      *<br>
+
+      Austin Gay and Lesbian Chamber of Commerce<br>
+
+      *<br>
+
+      Debi Gueperoux, Farmers Insurance<br>
+
+      *<br>
+
+      Dell, Inc. <br>
+
+      *<br>
+
+      Fall Creek Vineyards<br>
+
+      *<br>
+
+      Franklin Bank<br>
+
+      *<br>
+
+      Freescale<br>
+
+      *<br>
+
+      Gay and Lesbian Rainbow Pages<br>
+
+      *<br>
+
+      Gov. George W. Bush<br>
+
+      *<br>
+
+      Gov. Rick Perry<br>
+
+      *<br>
+
+      Human Rights Campaign, Austin<br>
+
+      *<br>
+
+      Jimmy Jacobs Homes<br>
+
+      *<br>
+
+      Lady Bird Johnson<br>
+
+      *<br>
+
+      Lynn Yeldell,<br />
+
+      UBS Financial Services<br>
+
+      *<br>
+
+      Mayor Will Wynn<br>
+
+      *<br>
+
+      Mercedes Homes<br>
+
+      *<br>
+
+      Michael Dell<br>
+
+      *<br>
+
+      Midtown Austin Title<br>
+
+      *<br>
+
+      Mortgage Associates of Texas<br>
+
+      *<br>
+
+      National Association of Hispanic Real Estate Professionals, Austin<br>
+
+      *<br>
+
+      National Hispanic Institute<br>
+
+      *<br>
+
+      NBC Studios<br>
+
+      *<br>
+
+      Piazza Real Estate<br>
+
+      *<br>
+
+      President Bill Clinton<br>
+
+      *<br>
+
+      Streetman Homes<br>
+
+      *<br>
+
+      Top Realty<br>
+
+      *<br>
+
+      US Oncology<br>
+
+      *<br>
+
+      U.S. Representative<br />
+
+      Michael McCaul,<br />
+
+      TX-District 10<br>
+
+      *<br>
+
+      U.S. Representative<br />
+
+      John A. Boehner,<br />
+
+      OH-District 8</p>
+
+  </div>
+
+</div>
+
+</body>
+
+</html>
+

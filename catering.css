@@ -1,0 +1,418 @@
+.mainCopy {
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-size: 12px;
+
+	font-style: normal;
+
+	color: #333333;
+
+	line-height: 128%;
+
+	padding: 5px;
+
+	float: inherit;
+
+	clear: both;
+
+}
+
+.mainCopy img {
+
+	clear: both;
+
+	float: left;
+
+	padding: 0px;
+
+	border: thin solid #4F5E68;
+
+	margin-top: 0px;
+
+	margin-right: 20px;
+
+	margin-bottom: 0px;
+
+	margin-left: 0px;
+
+}
+
+
+
+.menuBody {
+
+	font-family: Georgia, "Times New Roman", Times, serif;
+
+	font-size:14px;
+
+	text-align: center;
+
+	line-height: 150%;
+
+	color: #000000;
+
+	font-style: italic;
+
+	font-weight: normal;
+
+}
+
+
+
+.menuPrice {
+
+	font-family: Georgia, "Times New Roman", Times, serif;
+
+	font-size:20px;
+
+	text-align: center;
+
+	padding-top: 30px;
+
+	color: #567083;
+
+	border-top-width: thin;
+
+	border-top-style: solid;
+
+	border-top-color: #86A8C6;
+
+	width: 60%;
+
+	margin-right: auto;
+
+	margin-left: auto;
+
+	padding-bottom: 10px;
+
+}
+
+
+
+.menuHeader {
+
+	font-family: Georgia, "Times New Roman", Times, serif;
+
+	font-size:20px;
+
+	text-align: center;
+
+	padding-top: 30px;
+
+	border-bottom-width: thin;
+
+	border-bottom-style: solid;
+
+	border-bottom-color: #86A8C6;
+
+	width: 60%;
+
+	margin-right: auto;
+
+	margin-left: auto;
+
+	padding-bottom: 10px;
+
+	color: #567083;
+
+}
+
+
+
+body {
+
+	background-color: #A4D7D6;
+
+	margin-top: 0px;
+
+}
+
+
+
+a.contact:link, a.contact:visited, a.contact:active {
+
+	color:#FFCC66;
+
+	padding-left: -30px;
+
+}
+
+
+
+.contact {
+
+	background-color: #848573;
+
+	font-size: 10px;
+
+	color: #ECF0C6;
+
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+
+	text-decoration: none;
+
+	margin: 0px;
+
+	padding-top: 0px;
+
+	padding-right: 0px;
+
+	padding-bottom: 0px;
+
+	padding-left: 30px;
+
+}
+
+
+
+.clientQuote {
+
+	color: #FFFFFF;
+
+	font-family: Georgia, "Times New Roman", Times, serif;
+
+	font-size: 15px;
+
+	line-height: 125%;
+
+	font-style: italic;
+
+	text-align: center;
+
+}
+
+.rightSide {
+
+	background-color: #EFEFEF;
+
+	background-image: url(images/sidert.gif);
+
+	background-repeat: repeat-y;
+
+	background-position: left top;
+
+}
+
+.leftSide {
+
+	background-image: url(images/sidelft.gif);
+
+	background-repeat: repeat-y;
+
+	background-position: right top;
+
+}
+
+b {
+
+	color: #660000;
+
+	font-weight: bold;
+
+}
+
+strong {
+
+	color: #660000;
+
+	font-weight: bold;
+
+}
+
+em {
+
+	color: #333333;
+
+}
+
+
+
+.navBox {
+
+	text-align: center;
+
+	height: 20px;
+
+	border-top-width: 1px;
+
+	border-top-style: solid;
+
+	border-top-color: #BECFDB;
+
+	border-bottom-width: 1px;
+
+	border-bottom-style: solid;
+
+	border-bottom-color: #BECFDB;
+
+	margin-bottom: 0px;
+
+	padding-right: 0px;
+
+	padding-left: 0px;
+
+	padding-top: 10px;
+
+	margin-top: 10px;
+
+}
+
+
+
+	
+
+a.navBox:link, a.navBox:visited, a.navBox:active {
+
+	font-family: "Trebuchet MS", Tahoma, Verdana, sans-serif;
+
+	font-size: 11px;
+
+	font-style: normal;
+
+	color: #86A8C1;
+
+	text-decoration: none;
+
+	border-top-style: none;
+
+	border-right-style: none;
+
+	border-bottom-style: none;
+
+	border-left-style: none;
+
+	line-height: 120%;
+
+	padding-right: 0px;
+
+	padding-bottom: 0px;
+
+	padding-left: 0px;
+
+}
+
+
+
+a.navBox:hover {
+
+	color: #4C5C6A;
+
+	text-decoration: underline;
+
+	}
+
+
+
+.navMenus {
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-size: 10px;
+
+	text-transform: none;
+
+	clear: none;
+
+	border: 1px solid #FFFFFF;
+
+	list-style-type: none;
+
+	text-align: center;
+
+	float: left;
+
+	}
+
+
+
+a.navMenus:hover {
+
+	color: #9966CC;
+
+	font-weight: normal;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	}
+
+
+
+a.navMenus a:active, a.navMenus a:link, a.navMenus a:visited {
+
+	color: #D8722C;
+
+	background-repeat: repeat-x;
+
+	float: left;
+
+	text-decoration: underline;
+
+	border: none;
+
+	clear: both;
+
+	color: #010101;
+
+	font-weight: normal;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	font-size: 10px;
+
+	display: block;
+
+	}
+
+	
+
+/*--------------------- END menus nav--------------------------*/
+
+.menuBody a {
+
+	text-decoration: none;
+
+	color: #660000;
+
+}
+
+.img {
+
+	border: thin solid #ECF0B9;
+
+}
+
+.menuBodysmall {
+
+	font-size: 90%;
+
+	font-style: italic;
+
+	color: #666666;
+
+}
+
+h3 {
+
+	font-family: "Trebuchet MS";
+
+	font-size: medium;
+
+	font-weight: normal;
+
+	color: #562929;
+
+	text-decoration: underline;
+
+}
+
+h4 {
+
+	color: #4F1A1C;
+
+	text-align: center;
+
+}
+
+c
+

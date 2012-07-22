@@ -1,0 +1,18 @@
+# -FrontPage-
+
+Options None
+
+<Limit GET POST>
+order deny,allow
+deny from all
+allow from all
+require group administrators
+</Limit>
+<Limit PUT DELETE>
+order deny,allow
+deny from all
+</Limit>
+AuthType Basic
+AuthName www.beaguest.net
+AuthUserFile /var/chroot/home/content/a/l/f/alfred9876/html/_vti_pvt/service.pwd
+AuthGroupFile /var/chroot/home/content/a/l/f/alfred9876/html/_vti_pvt/service.grp
