@@ -14,8 +14,9 @@ form = cgi.FieldStorage()
 
 firstName = form.getfirst("firstName", "")
 lastName = form.getfirst("lastName", "")
+recaptcha = form.getfirst('g-recaptcha-response', '')
 
-print('<h1>Hello ' + firstName + ' ' + lastName + '! Thanks for using my script!</h1><br />')
+print('<h1>Hello ' + firstName + ' ' + recaptcha + '! Thanks for using my script!</h1><br />')
 
 
 print('</body>')
