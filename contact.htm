@@ -4,6 +4,13 @@
     <link href="catering.css" rel="stylesheet" type="text/css"/>
     <link href="contact_form.css" rel="stylesheet" type="text/css"/>
     <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script type="text/javascript">
+        var onloadCallback = function () {
+            grecaptcha.render('html_element', {
+                'sitekey': '6Lf_2BEUAAAAAFMz2cWXpnhnVlFEqZfHFUJB2V4R'
+            });
+        };
+    </script>
     <style type="text/css">
         <!--
         .style1 {
@@ -184,7 +191,7 @@
                                             <tr>
                                                 <td>
                                                     <form action="./cgi/contact.py" method="POST" id="myform">
-                                                          <!--onSubmit="location.href='./cgi/contact.py';return false;">-->
+                                                        <!--onSubmit="location.href='./cgi/contact.py';return false;">-->
 
                                                         <h3>Please take a moment to tell us about yourself and the
                                                             event.</h3>
@@ -402,6 +409,9 @@
                                                             </tbody>
                                                         </table>
                                                     </form>
+                                                    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+                                                            async defer>
+                                                    </script>
                                                 </td>
                                             </tr>
                                         </table>
