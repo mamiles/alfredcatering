@@ -12,13 +12,11 @@ print('<body>')
 
 form = cgi.FieldStorage()
 
-firstName = form.getfirst("firstName", "").upper()
+firstName = form.getfirst("firstName", "")
+lastName = form.getfirst("lastName", "")
 
-print('<h1>Hello ' + firstName + '! Thanks for using my script!</h1><br />')
+print('<h1>Hello ' + firstName + ' ' + lastName + '! Thanks for using my script!</h1><br />')
 
-print("<font size=+1>Environment</font><\br>")
-for param in os.environ.keys():
-    print("<b>%20s</b>: %s<\br>" % (param, os.environ[param]))
 
 print('</body>')
 print('</html>')
