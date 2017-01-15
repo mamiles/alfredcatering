@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 import cgi
 import cgitb
-import os
 
 cgitb.enable()
+cgitb.enable(display=0, logdir="/local/sites/alfredcatering.com/log/cgi.log")
 
 print("Content-type:text/html\r\n\r\n")
 print('<html>')
@@ -21,4 +21,4 @@ print('<h1>Hello ' + firstName + ' ' + lastName + '! Thanks for using my script!
 print('</body>')
 print('</html>')
 
-cgi.test()
+# cgi.test()
