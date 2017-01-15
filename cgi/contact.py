@@ -18,3 +18,5 @@ print('<h1>Hello ' + firstName + '! Thanks for using my script!</h1><br />')
 
 print('</body>')
 print('</html>')
+
+cgi.test()
