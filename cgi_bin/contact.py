@@ -8,6 +8,7 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 sys.path.insert(0, "/local/sites/alfredcatering.com/htdocs")
 from cgi_bin.re_captcha import ReCaptcha
+from cgi_bin.HTML import Table
 
 cgitb.enable()
 cgitb.enable(display=0, logdir="/local/sites/alfredcatering.com/log")
@@ -50,13 +51,25 @@ firstName = form.getfirst("firstName", "")
 lastName = form.getfirst("lastName", "")
 
 mail_text = """\
-This is a test message.
-Just testing out
+<html>
+  <head>Customer Contact Info from alfredcatering.com</head>
+  <body>
 """
 mail_text += 'First Name: %s' % firstName
 mail_text += 'Last Name: %s' % lastName
 
-to_address = 'miles.marvin@gmail.com'.split()
+contact_table = Table(header_row=['Attribute', 'Value'])
+contact_table.rows.append('First Name', form.getfirst("firstName", ""))
+contact_table.rows.append('Last Name', form.getfirst("lastName", ""))
+mail_text += str(contact_table)
+
+mail_text += """\
+        </p>
+    </body>
+</html>
+"""
+
+to_address = 'mamiles@gmail.com'.split()
 mail_type = 'plain'  # 'html'
 send_mail(mail_text, 'Customer Contact', to_address, mail_type)
 
