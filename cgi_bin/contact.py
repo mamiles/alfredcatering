@@ -42,6 +42,7 @@ if value is False:
     print('<head><title>alfredcatering.com contact email generation</title></head>')
     print('<body>')
     print('<h1>Invalid Captcha.  Please send try again or send email to alfred@alfredcatering.com</h1><br />')
+    print('<br><p>Click here to take you back: http://alfredcatering.com/contact.htm')
     print('</body>')
     print('</html>')
     sys.exit()
@@ -90,8 +91,6 @@ mail_text += """\
 to_address = 'mamiles@gmail.com'.split()
 mail_type = 'html'  # 'html'
 send_mail(mail_text, 'Customer Contact', to_address, mail_type)
-
-#print('<h1>Hello ' + firstName + ' ' + str(value) + '! Thanks for using my script!</h1><br />')
 
 redirectURL = "../thankyou.htm"
 
