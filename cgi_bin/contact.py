@@ -13,8 +13,8 @@ sys.path.insert(0, "/local/sites/alfredcatering.com/htdocs")
 from cgi_bin.re_captcha import ReCaptcha
 from cgi_bin.HTML import Table
 
-cgitb.enable()
-cgitb.enable(display=0, logdir="/local/sites/alfredcatering.com/log")
+# cgitb.enable()
+# cgitb.enable(display=0, logdir="/local/sites/alfredcatering.com/log")
 
 captcha = ReCaptcha(secret_key='6Lf_2BEUAAAAAFp8AUaJGKjvccufmlXok_Ouu0SL')
 
