@@ -47,20 +47,37 @@ if value is False:
     print('</html>')
     sys.exit()
 
-firstName = form.getfirst("firstName", "")
-lastName = form.getfirst("lastName", "")
-
 mail_text = """\
 <html>
   <head>Customer Contact Info from alfredcatering.com</head>
   <body>
+  <br>
 """
-mail_text += 'First Name: %s' % firstName
-mail_text += 'Last Name: %s' % lastName
 
 contact_table = Table(header_row=['Attribute', 'Value'])
+contact_table.rows.append(['Company Name', form.getfirst("businessName", "")])
 contact_table.rows.append(['First Name', form.getfirst("firstName", "")])
 contact_table.rows.append(['Last Name', form.getfirst("lastName", "")])
+contact_table.rows.append(['Address', form.getfirst("address", "")])
+contact_table.rows.append(['City', form.getfirst("city", "")])
+contact_table.rows.append(['State', form.getfirst("state", "")])
+contact_table.rows.append(['Zip Code', form.getfirst("zip", "")])
+contact_table.rows.append(['Phone', form.getfirst("phone", "")])
+contact_table.rows.append(['Alt Phone', form.getfirst("altPhone", "")])
+contact_table.rows.append(['E-Mail', form.getfirst("email", "")])
+contact_table.rows.append(['Alt Email', form.getfirst("altEmail", "")])
+contact_table.rows.append(['Type of Event', form.getfirst("eventType", "")])
+contact_table.rows.append(['Event Date', form.getfirst("eventDate", "")])
+contact_table.rows.append(['Venue Address', form.getfirst("venueAddress", "")])
+contact_table.rows.append(['Venue Contact Person', form.getfirst("venuePerson", "")])
+contact_table.rows.append(['Event Time', form.getfirst("eventTime", "")])
+contact_table.rows.append(['Venue Contact Phone', form.getfirst("venuePhone", "")])
+contact_table.rows.append(['Number of Guests', form.getfirst("numberGuests", "")])
+contact_table.rows.append(['Menu Preference', form.getfirst("menuPreference", "")])
+contact_table.rows.append(['How did you hear about us?', form.getfirst("referral", "")])
+contact_table.rows.append(['If other, please specify', form.getfirst("otherReferral", "")])
+contact_table.rows.append(['Comments', form.getfirst("numberGuests", "")])
+
 mail_text += str(contact_table)
 
 mail_text += """\
@@ -73,7 +90,7 @@ to_address = 'mamiles@gmail.com'.split()
 mail_type = 'html'  # 'html'
 send_mail(mail_text, 'Customer Contact', to_address, mail_type)
 
-print('<h1>Hello ' + firstName + ' ' + str(value) + '! Thanks for using my script!</h1><br />')
+#print('<h1>Hello ' + firstName + ' ' + str(value) + '! Thanks for using my script!</h1><br />')
 
 
 print('</body>')
