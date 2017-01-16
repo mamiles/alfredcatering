@@ -42,7 +42,7 @@ if value is False:
     print('<head><title>alfredcatering.com contact email generation</title></head>')
     print('<body>')
     print('<h1>Invalid Captcha.  Please send try again or send email to alfred@alfredcatering.com</h1><br />')
-    print('<br><p>Click here to take you back:</p>')
+    print('<br>Click here to take you back:')
     print('<a href="http://alfredcatering.com/contact.htm"> http://alfredcatering.com/contact.htm</a>')
     print('</body>')
     print('</html>')
