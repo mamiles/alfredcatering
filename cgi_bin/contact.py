@@ -76,9 +76,11 @@ contact_table.rows.append(['Number of Guests', form.getfirst("numberGuests", "")
 contact_table.rows.append(['Menu Preference', form.getfirst("menuPreference", "")])
 contact_table.rows.append(['How did you hear about us?', form.getfirst("referral", "")])
 contact_table.rows.append(['If other, please specify', form.getfirst("otherReferral", "")])
-contact_table.rows.append(['Comments', form.getfirst("numberGuests", "")])
 
 mail_text += str(contact_table)
+
+mail_text += '<p>Comments:<br>'
+mail_text += '<p>%s<br>' % form.getfirst("comments", "")
 
 mail_text += """\
         </p>
