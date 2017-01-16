@@ -2,6 +2,8 @@
 
 import cgi
 import cgitb
+import sys
+sys.path.insert(0, "/local/sites/alfredcatering.com/htdocs/cgi")
 from .re_captcha import ReCaptcha
 
 
