@@ -93,7 +93,7 @@ send_mail(mail_text, 'Customer Contact', to_address, mail_type)
 
 #print('<h1>Hello ' + firstName + ' ' + str(value) + '! Thanks for using my script!</h1><br />')
 
-redirectURL = "./thankyou.htm"
+redirectURL = "../thankyou.htm"
 
 print('Content-Type: text/html')
 print('Status: 303 See other')
