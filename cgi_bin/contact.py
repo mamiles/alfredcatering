@@ -70,7 +70,7 @@ mail_text += """\
 """
 
 to_address = 'mamiles@gmail.com'.split()
-mail_type = 'plain'  # 'html'
+mail_type = 'html'  # 'html'
 send_mail(mail_text, 'Customer Contact', to_address, mail_type)
 
 print('<h1>Hello ' + firstName + ' ' + str(value) + '! Thanks for using my script!</h1><br />')
