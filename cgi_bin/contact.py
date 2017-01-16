@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-
+"""
+This script will send a email with all the contact info field out on alfredcatering.com web site
+The reCaptcha was setup here:  https://www.google.com/recaptcha/admin#list
+"""
 import cgi
 import cgitb
 import sys
