@@ -3,30 +3,62 @@
 import cgi
 import cgitb
 import sys
-import os
+import smtplib
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 sys.path.insert(0, "/local/sites/alfredcatering.com/htdocs")
-# PACKAGE_PARENT = '..'
-# SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
-# sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
 from cgi_bin.re_captcha import ReCaptcha
 
-
 cgitb.enable()
-cgitb.enable(display=0, logdir="/local/sites/alfredcatering.com/log/cgi.log")
+cgitb.enable(display=0, logdir="/local/sites/alfredcatering.com/log")
 
 captcha = ReCaptcha(secret_key='6Lf_2BEUAAAAAFp8AUaJGKjvccufmlXok_Ouu0SL')
 
+
+def send_mail(mail_text, subject, to, type='plain'):
+    from_address = "mamiles@gmail.com"
+    comma_space = ', '
+    msg = MIMEMultipart('alternative')
+    msg['Subject'] = subject
+    msg['From'] = from_address
+    msg['To'] = comma_space.join(to)
+    msg.attach(MIMEText(mail_text, type))
+    server = smtplib.SMTP('smtp.gmail.com', port=587)
+    server.ehlo()
+    server.starttls()
+    server.login('mamiles@gmail.com', 'ipnwiudchkkvwhvg')
+    server.sendmail(from_address, to, msg.as_string())
+    server.quit()
+    return
+
 print("Content-type:text/html\r\n\r\n")
 print('<html>')
-print('<head><title>My First CGI Program</title></head>')
+print('<head><title>alfredcatering.com contact email generation</title></head>')
 print('<body>')
 
 form = cgi.FieldStorage()
 
-firstName = form.getfirst("firstName", "")
-lastName = form.getfirst("lastName", "")
 recaptcha = form.getfirst('g-recaptcha-response', '')
 value = captcha.is_success(recaptcha)
+if value is False:
+    print('<h1>Invalid Captcha.  Please send try again or send email to alfred@alfredcatering.com</h1><br />')
+    print('</body>')
+    print('</html>')
+    sys.exit()
+
+firstName = form.getfirst("firstName", "")
+lastName = form.getfirst("lastName", "")
+
+mail_text = """\
+This is a test message.
+Just testing out
+"""
+mail_text += 'First Name: %s' % firstName
+mail_text += 'Last Name: %s' % lastName
+
+to_address = 'miles.marvin@gmail.com'.split()
+mail_type = 'plain'  # 'html'
+send_mail(mail_text, 'Customer Contact', to_address, mail_type)
 
 print('<h1>Hello ' + firstName + ' ' + str(value) + '! Thanks for using my script!</h1><br />')
 
