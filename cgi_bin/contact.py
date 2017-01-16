@@ -3,6 +3,7 @@
 import cgi
 import cgitb
 import sys
+import random
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -32,16 +33,15 @@ def send_mail(mail_text, subject, to, type='plain'):
     server.quit()
     return
 
-print("Content-type:text/html\r\n\r\n")
-print('<html>')
-print('<head><title>alfredcatering.com contact email generation</title></head>')
-print('<body>')
-
 form = cgi.FieldStorage()
 
 recaptcha = form.getfirst('g-recaptcha-response', '')
 value = captcha.is_success(recaptcha)
 if value is False:
+    print("Content-type:text/html\r\n\r\n")
+    print('<html>')
+    print('<head><title>alfredcatering.com contact email generation</title></head>')
+    print('<body>')
     print('<h1>Invalid Captcha.  Please send try again or send email to alfred@alfredcatering.com</h1><br />')
     print('</body>')
     print('</html>')
@@ -49,9 +49,9 @@ if value is False:
 
 mail_text = """\
 <html>
-  <head>Customer Contact Info from alfredcatering.com</head>
+  <head><b>Customer Contact Info from alfredcatering.com</b></head>
   <body>
-  <br>
+  <p> <br>
 """
 
 contact_table = Table(header_row=['Attribute', 'Value'])
@@ -94,8 +94,20 @@ send_mail(mail_text, 'Customer Contact', to_address, mail_type)
 
 #print('<h1>Hello ' + firstName + ' ' + str(value) + '! Thanks for using my script!</h1><br />')
 
+redirectURL = "/?r=%s" % random.randint(0, 100000000)
 
-print('</body>')
+print('Content-Type: text/html')
+print('Location: %s' % redirectURL)
+print()  # HTTP says you have to have a blank line between headers and content
+print('<html>')
+print('  <head>')
+print('    <meta http-equiv="refresh" content="0;url=%s" />' % redirectURL)
+print('    <title>You are going to be redirected</title>')
+print('  </head>')
+print('  <body>')
+print('    Redirecting... <a href="%s">Click here if you are not redirected</a>' % redirectURL)
+print('  </body>')
 print('</html>')
+
 
 # cgi.test()
