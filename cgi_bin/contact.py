@@ -3,7 +3,6 @@
 import cgi
 import cgitb
 import sys
-import random
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -94,9 +93,10 @@ send_mail(mail_text, 'Customer Contact', to_address, mail_type)
 
 #print('<h1>Hello ' + firstName + ' ' + str(value) + '! Thanks for using my script!</h1><br />')
 
-redirectURL = "/?r=%s" % random.randint(0, 100000000)
+redirectURL = "./thankyou.htm"
 
 print('Content-Type: text/html')
+print('Status: 303 See other')
 print('Location: %s' % redirectURL)
 print()  # HTTP says you have to have a blank line between headers and content
 print('<html>')
