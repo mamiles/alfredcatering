@@ -59,8 +59,8 @@ mail_text += 'First Name: %s' % firstName
 mail_text += 'Last Name: %s' % lastName
 
 contact_table = Table(header_row=['Attribute', 'Value'])
-contact_table.rows.append('First Name', form.getfirst("firstName", ""))
-contact_table.rows.append('Last Name', form.getfirst("lastName", ""))
+contact_table.rows.append(['First Name', form.getfirst("firstName", "")])
+contact_table.rows.append(['Last Name', form.getfirst("lastName", "")])
 mail_text += str(contact_table)
 
 mail_text += """\
