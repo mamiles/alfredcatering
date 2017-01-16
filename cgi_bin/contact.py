@@ -5,9 +5,9 @@ import cgitb
 import sys
 import os
 sys.path.insert(0, "/local/sites/alfredcatering.com/htdocs")
-PACKAGE_PARENT = '..'
-SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
-sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
+# PACKAGE_PARENT = '..'
+# SCRIPT_DIR = os.path.dirname(os.path.realpath(os.path.join(os.getcwd(), os.path.expanduser(__file__))))
+# sys.path.append(os.path.normpath(os.path.join(SCRIPT_DIR, PACKAGE_PARENT)))
 from cgi_bin.re_captcha import ReCaptcha
 
 
@@ -28,7 +28,7 @@ lastName = form.getfirst("lastName", "")
 recaptcha = form.getfirst('g-recaptcha-response', '')
 value = captcha.is_success(recaptcha)
 
-print('<h1>Hello ' + firstName + ' ' + value + '! Thanks for using my script!</h1><br />')
+print('<h1>Hello ' + firstName + ' ' + str(value) + '! Thanks for using my script!</h1><br />')
 
 
 print('</body>')
