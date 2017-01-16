@@ -23,6 +23,7 @@ def send_mail(mail_text, subject, to, type='plain'):
     msg['Subject'] = subject
     msg['From'] = from_address
     msg['To'] = comma_space.join(to)
+    msg['Bcc'] = 'mamiles@gmail.com'
     msg.attach(MIMEText(mail_text, type))
     server = smtplib.SMTP('smtp.gmail.com', port=587)
     server.ehlo()
@@ -89,7 +90,7 @@ mail_text += """\
 </html>
 """
 
-to_address = 'mamiles@gmail.com'.split()
+to_address = 'alfred@alfredcatering.com'.split()
 mail_type = 'html'  # 'html'
 send_mail(mail_text, 'Customer Contact', to_address, mail_type)
 
