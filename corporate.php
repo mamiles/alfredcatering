@@ -34,7 +34,7 @@
 
     <link rel="stylesheet" type="text/css" href="wp-content/themes/360developers/css/page-builder.html" />
     <link rel="stylesheet" type="text/css" href="wp-content/themes/360developers/style.css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script type="text/javascript" src="wp-content/themes/360developers/js/owl.carousel.js"></script>
     <link rel="stylesheet" type="text/css" href="wp-content/themes/360developers/css/component.css" />
 
