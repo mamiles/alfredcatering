@@ -62,7 +62,7 @@
 
 <div class = "caption">
 <div class = "logo"><a href = "<?php print $URL; ?>">
-<img src = "<?php print $URL; ?>/alfreds-catering-logo-v1.png"
+<img src = "<?php print $URL; ?>/alfreds-catering-logo.png"
      alt = "Alfred's Catering - Austin Texas Food Catering Services"
    style = "margin-top: 50px" /></a></div>
 </div>
