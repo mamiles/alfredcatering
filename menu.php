@@ -8,7 +8,7 @@
 
     <div class="social menu-social" style = "background:#333;">
         <a href="https://www.facebook.com/alfredscatering/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-        <a href="mailto:care@alfredcatering.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+        <a href="mailto:catering@alfredcatering.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
     </div>
 
     <h3>Services</h3>
