@@ -1,6 +1,8 @@
 <?php
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+    $headers .= "From: mamiles@gmail.com\r\n";
+    $headers .= "Reply-To: mamiles@gmail.com\r\n";
     $_REQUEST["date"] = $_REQUEST["time"];
     unset($_REQUEST["time"]);
     $_REQUEST["time"] = null;
