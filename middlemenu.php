@@ -20,7 +20,7 @@
       onmouseover="this.src='wp-content/themes/360developers/images/tooth.png';"
       onmouseout="this.src='wp-content/themes/360developers/images/tooth.png';"/><span>Photo Gallery</span></a></li>
       
-<li><a href="mailto:catering@alfredcatering.com"> <img src="wp-content/themes/360developers/images/tooth.png" alt="#"
+<li><a href="mailto:cateringsales@alfredcatering.com"> <img src="wp-content/themes/360developers/images/tooth.png" alt="#"
       onmouseover="this.src='wp-content/themes/360developers/images/tooth.png';"
       onmouseout="this.src='wp-content/themes/360developers/images/tooth.png';"/><span>Contact</span></a></li>
 

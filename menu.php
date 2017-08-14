@@ -8,7 +8,7 @@
 
     <div class="social menu-social" style = "background:#333;">
         <a href="https://www.facebook.com/alfredscatering/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-        <a href="mailto:catering@alfredcatering.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+        <a href="mailto:cateringsales@alfredcatering.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
     </div>
 
     <h3>Services</h3>
@@ -31,7 +31,7 @@
                 <li id="menu-item-2749" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2749"><a href="event-planning.php">Event Planning</a></li>
                 <li id="menu-item-2747" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2747"><a href="concierge.php">Concierge</a></li>
                 <li id="menu-item-2747" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2747"><a href="testimonials.php">Testimonials</a></li>
-                <li id="menu-item-2747" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2747"><a href="mailto:catering@alfredcatering.com">Contact Us</a></li>
+                <li id="menu-item-2747" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2747"><a href="mailto:cateringsales@alfredcatering.com">Contact Us</a></li>
             </ul>
         </div>
     </div>

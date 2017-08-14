@@ -8,7 +8,7 @@
                 <div class="menu" style = "margin-top: 8px; box-shadow: 0px 0px 5px #000; padding: 5px; padding-top: 10px; padding-bottom: 10px; vertical-align: middle; background: black; border-radius: 5px;">
                     <div id="showRightPush">Menu</div>
                 </div>
-                <p style = "box-shadow: 0 0 5px #000; background: black; border-radius: 10px; width: 325px; padding-left: 16px;"><span style = 'color: #c31824; font-weight: bold; display:inline-block'>Email Us:</span> <a href = "mailto:catering@alfredcatering.com" style = "color: #fff;">catering@alfredcatering.com</a></p>
+                <p style = "box-shadow: 0 0 5px #000; background: black; border-radius: 10px; width: 325px; padding-left: 16px;"><span style = 'color: #c31824; font-weight: bold; display:inline-block'>Email Us:</span> <a href = "mailto:cateringsales@alfredcatering.com" style = "color: #fff;">cateringsales@alfredcatering.com</a></p>
             </div>
         </div>
     </div>
