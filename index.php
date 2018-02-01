@@ -60,9 +60,9 @@
 </div>
 <!--// meta slider-->
 
-<div class = "caption">
+<div class = "caption" style = "left: 25%; margin-left: -285px; max-width: 610px; position: absolute; top: 30%;"
 <div class = "logo"><a href = "<?php print $URL; ?>">
-<img src = "<?php print $URL; ?>/alfreds-catering-logo.png"
+<img src = "<?php print $URL; ?>/alfreds-catering-logo.png" height="214" width="610"
      alt = "Alfred's Catering - Austin Texas Food Catering Services"
    style = "margin-top: 50px" /></a></div>
 </div>

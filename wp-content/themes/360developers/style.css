@@ -185,7 +185,7 @@ z-index: 999;
 .smileL span {font-size:60px; color:#393939; margin-bottom:18px; display:block; font-family:'AvenirNextLTPro-Cn'; }
 #content { padding: 90px 0 80px; min-height:550px; }
 .caption {
-  left: 25%;
+  left: 50%;
   margin-left: -285px;
   max-width: 610px;
   position: absolute;
