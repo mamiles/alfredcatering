@@ -97,6 +97,11 @@
                     <style>
                         img { padding: 16px; }
                     </style>
+
+                    <center>
+                        <img src = "Event_Planning_Pic_2.jpg" alt = "" style = "width: 100%; max-width: 900px;"/>
+                    </center>
+
                     <!--
                     <center>
                         <img src = "image-1.png" />
