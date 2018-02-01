@@ -21,7 +21,7 @@
             <div id="metaslider_4">
                 <ul class="slides">
                     <li style="display: block; width: 100%;" class="slide-3909 ms-image">
-                        <img src="social.png" height="710" width="1440" alt="" class="slider-4 slide-3909" />
+                        <img src="Event_Planning_Pic_1.jpg" height="710" width="1440" alt="" class="slider-4 slide-3909" />
                     </li>
                 </ul>
             </div>

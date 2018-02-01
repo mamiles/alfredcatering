@@ -17,12 +17,12 @@
 
 <!-- meta slider -->
 <div style = "width: 100%;" class = "metaslider metaslider-flex metaslider-4 ml-slider nav-hidden">
-    
+
     <div id = "metaslider_container_4">
         <div id = "metaslider_4">
             <ul class = "slides">
                 <li style="display: block; width: 100%;" class="slide-3909 ms-image">
-                    <img src="slider1.png" height="710" width="1440" alt="" class="slider-4 slide-3909" />
+                    <img src="Homepage_Pic_1.jpg" height="710" width="1440" alt="" class="slider-4 slide-3909" />
                 </li>
                 <!--
                 <li style="display: block; width: 100%;" class="slide-3909 ms-image">
@@ -34,11 +34,11 @@
             </ul>
         </div>
     </div>
-    
+
     <script type = "text/javascript">
         var metaslider_4 = function($) {
             $('#metaslider_4').addClass('flexslider'); // theme/plugin conflict avoidance
-            $('#metaslider_4').flexslider({ 
+            $('#metaslider_4').flexslider({
                 slideshowSpeed:3000,
                 animation:"fade",
                 controlNav:false,
@@ -96,18 +96,18 @@
         <div style = "text-align: left; background: url(opac.png); padding: 16px;">
 
     	    <b>Alfred's Catering</b> & Event Planning has over 30 years of experience in the industry. We are a full service concierge for you for any event.
-        
+
 	        In our vast experience, we have learned that every event is unique so we really encourage you to be creative and tell us what your inspiration or vision is so that we can create it for you!
-        
+
     	    Our mission is for every detail to be exactly how you imagine it to be.  We not only cater your event but we can take care of every element to include rentals, florist, DJ, TABC bartenders, valet/transportation so that you can Be A Guest At Your Own Event!
-        
+
 	        This has been the personal mission of Alfred's Catering & Event Planning since its conception.
-        
+
         </div>
 
         <br><br>
 
-        <img src = "bear.png?v=1" alt = "" style = "width: 90%; max-width: 900px;"/>
+        <img src = "Homepage_Pic_2.jpg?v=1" alt = "" style = "width: 90%; max-width: 900px;"/>
 
         <!-- <br><a class="button" href="#">New Patient Special</a> //-->
 
@@ -115,7 +115,7 @@
 </div>
 
 </div>
-</div> 
+</div>
 </div>
 
 
