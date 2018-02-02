@@ -69,7 +69,7 @@
     <div style = "height: 200px"></div>
     <div class="dr-section">
         <div class="dr-outer">
-            <div class="Ldr col-md-4 col-sm-4 col-lg-4 col-xs-12"><img src="eventplanning-1.jpg" alt = "event planning" style = "position: relative; margin-top: 48px;" /></div>
+            <div class="Ldr col-md-4 col-sm-4 col-lg-4 col-xs-12"><img src="Event_Planning_Pic_2.jpg" alt = "event planning" style = "max-width: 500px; position: relative; margin-top: 160px;" /></div>
             <div class="Rdr col-md-8 col-sm-8 col-lg-8 col-xs-12">
                 <div class="dr_wrap">
                     <span style = "font-size: 40px;">Event Planning</span>
@@ -98,11 +98,11 @@
                         img { padding: 16px; }
                     </style>
 
+                    <!--
                     <center>
                         <img src = "Event_Planning_Pic_2.jpg" alt = "" style = "width: 100%; max-width: 900px;"/>
                     </center>
 
-                    <!--
                     <center>
                         <img src = "image-1.png" />
                         <img src = "image-2.png" />
