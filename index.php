@@ -101,7 +101,7 @@
 
     	    Our mission is for every detail to be exactly how you imagine it to be.  We not only cater your event but we can take care of every element to include rentals, florist, DJ, TABC bartenders, valet/transportation so that you can Be A Guest At Your Own Event!
 
-	        This has been the personal mission of Alfred's Catering & Event Planning since its conception.
+	        This has been the personal mission of Alfred's Catering & Event Planning since its inception.
 
         </div>
 
