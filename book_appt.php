@@ -15,6 +15,5 @@
     $str .= "</table>";
     $str = urldecode($str);
     mail("alfred@alfredcatering.com", "+1 Lead Received - Alfred's Catering - From IP = " . $_SERVER["REMOTE_ADDR"], $str, $headers);
-    mail("greg.sidelnikov@gmail.com", "+1 Lead Received - Alfred's Catering - From IP = " . $_SERVER["REMOTE_ADDR"], $str, $headers);
     mail("mamiles@gmail.com", "+1 Lead Received - Alfred's Catering - From IP = " . $_SERVER["REMOTE_ADDR"], $str, $headers);
 ?>
